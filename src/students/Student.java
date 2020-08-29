@@ -1,10 +1,6 @@
 package students;
 
-public class Student {
-
-    private String name;
-    private String surname;
-    private int age;
+public class Student extends Person {
 
     private int group;
     private int completedTask;
@@ -21,9 +17,7 @@ public class Student {
 
     public Student(String name, String surname, int age,
                    int group, int completedTask, int completedModule, boolean experience) {
-        this.name = name;
-        this.surname = surname;
-        this.age = age;
+        super(name, surname, age);
         this.group = group;
         this.completedTask = completedTask;
         this.completedModule = completedModule;
