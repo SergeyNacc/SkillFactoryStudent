@@ -13,11 +13,7 @@ public class Student {
 
 
     public Student(String name, String surname, int age) {
-        this(name, surname, age,
-                group: 0,
-                completedTask: 0,
-                completedModule: 0,
-                experience: false);
+        this(name, surname, age, 0, 0, 0, false);
     }
 
     public Student(String name, String surname, int age,
